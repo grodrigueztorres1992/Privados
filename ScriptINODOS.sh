@@ -3,7 +3,7 @@
 #este script se debe usar con el sensor de PRTG ssh secuencia de comando 
 #Creado:grodriguez
 INODOS=$(df -Ti | grep root | awk '{print $6}')
-Start=$($INODOS%?)
+Start=$(INODOS%?)
 
 #descomentar linea de abajo para hacer pruebas
 #status="10"
